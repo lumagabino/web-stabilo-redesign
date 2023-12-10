@@ -59,3 +59,225 @@ input {
     color: #414141;
     font-size: 14px;
 }
+
+ /* Banner */
+.banner img{
+    max-width: 90%;
+    display: flex;
+    margin: 48px auto;
+}
+
+ /* Carousel */
+.carousel-container{
+    position: relative;
+    padding: 16px;
+    max-width: 640px;
+    margin: 56px auto;
+}
+
+.gallery-wrapper{
+    overflow-x: auto;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+ }
+
+.arrow-left, .arrow-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right{
+    left: auto;
+    right: 0;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+    opacity: 1;
+}
+
+.item-gallery{
+    height: 220px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+ /* Hide scroll bar */
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+ /* Container Stabilo*/
+.stabilo-container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 180px;
+}
+
+.stabilo-container-text{
+    width: 600px;
+}
+
+.stabilo-container-image img{
+    width: 600px;
+}
+
+.stabilo-container-title {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.456px;
+    padding-top: 8px;
+}
+
+.stabilo-container-description {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.456px;
+    padding-top: 18px;
+}
+
+.stabilo-container-button {
+    background: #222;
+    width: 216px;
+    height: 56px;
+    border: none; 
+    margin-top: 48px;
+    float: right;
+}
+
+.stabilo-container-button-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.38px;
+}
+
+/* Container Inspiration*/
+.inspiration-container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-top: 180px;
+}
+
+.inspiration-container-text{
+    width: 600px;
+}
+
+.inspiration-container-image img{
+    width: 600px;
+}
+
+.inspiration-container-title {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: left;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.456px;
+    padding-top: 8px;
+}
+
+.inspiration-container-description {
+    color: rgba(0, 0, 0, 0.80);
+    text-align: left;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.456px;
+    padding-top: 18px;
+}
+
+.inspiration-container-button {
+    background: #222;
+    width: 216px;
+    height: 56px;
+    border: none; 
+    margin-top: 48px;
+    float: left;
+}
+
+.inspiration-container-button-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.38px;
+}
+
+@media screen and (max-width: 1000px){
+     /* Container Stabilo*/
+    .stabilo-container{
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    .stabilo-container-title {
+        text-align: left;
+    }
+
+    .stabilo-container-description {
+        text-align: left;
+    }
+
+    .stabilo-container-button {
+        float: left;
+    }
+
+    /* Container Inspiration*/
+    .inspiration-container{
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    .inspiration-container-title {
+        text-align: left;
+    }
+
+    .inspiration-container-description {
+        text-align: left;
+    }
+}
