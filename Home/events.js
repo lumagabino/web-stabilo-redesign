@@ -25,6 +25,7 @@ controls.forEach((control) => {
 
     items[currentItem].scrollIntoView({
       behavior: "smooth",
+      block: 'nearest',
       inline: "center"
     });
 
