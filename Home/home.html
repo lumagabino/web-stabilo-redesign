@@ -7,7 +7,7 @@
     <script src="events.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>Stabilo</title>
 </head>
 <body>
@@ -40,12 +40,12 @@
 
     <!-- Carousel -->
     <div class="carousel">
-        <!-- title -->
+        <p class="carousel-title">CATEGORIAS EM DESTAQUE</p>
         <div class="carousel-container">
-            <button class="arrow-left control">
+            <button class="arrow-left control" onclick="clickCarouselLeft()">
                 <img src="../Images/arrowLeft.png">
             </button>
-            <button class="arrow-right control">
+            <button class="arrow-right control" onclick="clickCarouselRight()">
                 <img src="../Images/arrowRight.png">
             </button>
             <div class="gallery-wrapper">
@@ -57,12 +57,12 @@
                     <img src="../Images/gallery5.png" class="item-gallery current-item">
                     <img src="../Images/gallery6.png" class="item-gallery current-item">
     
-                    <img src="../Images/gallery1.png" class="item-gallery current-item">
-                    <img src="../Images/gallery2.png" class="item-gallery current-item">
-                    <img src="../Images/gallery3.png" class="item-gallery current-item">
-                    <img src="../Images/gallery4.png" class="item-gallery current-item">
-                    <img src="../Images/gallery5.png" class="item-gallery current-item">
-                    <img src="../Images/gallery6.png" class="item-gallery current-item">
+                    <img src="../Images/gallery7.png" class="item-gallery current-item">
+                    <img src="../Images/gallery8.png" class="item-gallery current-item">
+                    <img src="../Images/gallery9.png" class="item-gallery current-item">
+                    <img src="../Images/gallery10.png" class="item-gallery current-item">
+                    <img src="../Images/gallery11.png" class="item-gallery current-item">
+                    <img src="../Images/gallery12.png" class="item-gallery current-item">
                 </div>
             </div>
         </div>
@@ -107,30 +107,29 @@
 
     <!-- Footer -->
     <div class="footer-container">
-        <div class="footer-copywriting">
-            <div class="footer-logo">
-                <img src="../Images/logo.png">
-            </div>
-            <p class="copywriting">© 2023 STABILO International GmbH</p>
+        <div class="footer-logo">
+            <img src="../Images/logo.png">
         </div>
-        <div class="footer-links">
-            <div class="services">
-                <p class="footer-title">Serviços</p>
-                <p class="footer-item">FAQ</p>
-                <p class="footer-item">Contato</p>
-            </div>
-           
-            <div class="information">
-                <p class="footer-title">Informações</p>
-                <p class="footer-item">Quem somos</p>
-                <p class="footer-item">Whistleblowing</p>
-            </div>
+        <div class="footer-links-content">
+            <div class="footer-links">
+                <div class="services">
+                    <p class="footer-title">Serviços</p>
+                    <p class="footer-item">FAQ</p>
+                    <p class="footer-item">Contato</p>
+                </div>
             
-            <div class="legal">
-                <p class="footer-item">Imprint</p>
-                <p class="footer-item">Termos de uso</p>
-                <p class="footer-item">Declaração de privacidade</p>
-                <p class="footer-item">Cookie Policy</p>
+                <div class="information">
+                    <p class="footer-title">Informações</p>
+                    <p class="footer-item">Quem somos</p>
+                    <p class="footer-item">Whistleblowing</p>
+                </div>
+                
+                <div class="legal">
+                    <p class="footer-item">Imprint</p>
+                    <p class="footer-item">Termos de uso</p>
+                    <p class="footer-item">Declaração de privacidade</p>
+                    <p class="footer-item">Cookie Policy</p>
+                </div>
             </div>
         </div>
         <div class="follow-us-social-media">
@@ -153,6 +152,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer-copywriting">
+        <p class="copywriting">© 2023 STABILO International GmbH</p>
     </div>
 
 </body>

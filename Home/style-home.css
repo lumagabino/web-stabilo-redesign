@@ -30,10 +30,18 @@ nav {
     padding-left: 20px;
     color: #202020;
     text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+    letter-spacing: -0.456px;
 }
 
 .logo img{
-    width: 180px;
+    width: 200px;
 }
 
 .search {
@@ -75,11 +83,27 @@ input {
 }
 
  /* Carousel */
+.carousel{
+    padding-top: 100px;
+}
+
+.carousel-title{
+    color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.456px;
+    padding-bottom: 24px;
+}
+
 .carousel-container{
     position: relative;
     padding: 16px;
     max-width: 90%;
-    margin: 56px auto;
+    margin: 0px auto;
 }
 
 .gallery-wrapper{
@@ -103,6 +127,7 @@ input {
     background: transparent;
     opacity: 0.6;
     transition: all 600ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .arrow-right{
@@ -140,8 +165,10 @@ input {
  /* Container Stabilo*/
 .stabilo-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 180px;
 }
 
@@ -150,7 +177,7 @@ input {
 }
 
 .stabilo-container-image img{
-    width: 600px;
+    width: 100%;
 }
 
 .stabilo-container-title {
@@ -160,7 +187,7 @@ input {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     letter-spacing: -0.456px;
     padding-top: 8px;
 }
@@ -172,7 +199,7 @@ input {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     letter-spacing: -0.456px;
     padding-top: 18px;
 }
@@ -204,8 +231,10 @@ input {
 /* Container Inspiration*/
 .inspiration-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 180px;
 }
 
@@ -214,7 +243,7 @@ input {
 }
 
 .inspiration-container-image img{
-    width: 600px;
+    width: 100%;
 }
 
 .inspiration-container-title {
@@ -224,7 +253,7 @@ input {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     letter-spacing: -0.456px;
     padding-top: 8px;
 }
@@ -236,7 +265,7 @@ input {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 36px */
+    line-height: 150%;
     letter-spacing: -0.456px;
     padding-top: 18px;
 }
@@ -269,13 +298,13 @@ input {
 .footer-container{
     display: flex;
     justify-content: space-evenly;
-    max-width: 100%;
+    width: 100%;
     padding-top: 220px;
-    padding-bottom: 36px;
 }
 
 .footer-copywriting{
-    justify-content: left;
+    width: 100%;
+    padding-bottom: 8px;
 }
 
 .copywriting{
@@ -289,6 +318,7 @@ input {
     padding-left: 10px;
     padding-top: 100px;
 }
+
 .footer-logo img{
     width: 160px;
 }
@@ -296,7 +326,7 @@ input {
 .footer-links{
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 420px;
 }
 
 .footer-title{
@@ -305,7 +335,7 @@ input {
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140.625%; /* 19.688px */
+    line-height: 140.625%;
 }
 
 .footer-item{
@@ -314,7 +344,7 @@ input {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140.625%; /* 19.688px */
+    line-height: 140.625%; 
 }
 
 .social-media{
@@ -356,12 +386,13 @@ input {
 @media screen and (max-width: 1000px){
      /* Container Stabilo*/
     .stabilo-container{
-        flex-direction: column;
-        z-index: 10;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .stabilo-container-title {
         text-align: left;
+        padding-top: 24px;
     }
 
     .stabilo-container-description {
@@ -375,14 +406,37 @@ input {
     /* Container Inspiration*/
     .inspiration-container{
         flex-direction: column;
-        z-index: 10;
+        align-items: center;
     }
 
     .inspiration-container-title {
         text-align: left;
+        padding-top: 24px;
     }
 
     .inspiration-container-description {
         text-align: left;
+    }
+}
+
+@media screen and (max-width: 720px){
+    /* Footer */
+    .footer-container{
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .footer-links-content{
+        align-items: center;
     }
 }
